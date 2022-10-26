@@ -1,0 +1,37 @@
+#recipecontainer{
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color:rgb(255, 231, 231);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#limg{
+    width: 450px;
+    height: 550px;  
+    padding-left: 450px;
+    border-radius: 30px;
+    margin-left: 50px;
+    background-color: rgb(246, 241, 234);
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#detadiv{
+    margin-top: -560px;
+    padding-left: 60px;
+    line-height: 25px;
+}
+
+h3{
+    width: 400px;
+    font-size: 30px;
+}
+
+#instruction{
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom:     30px;
+}

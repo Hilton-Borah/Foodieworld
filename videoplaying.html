@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #navbar {
+            width: 1500px;
+            height: 50px;
+            /* border: 1px solid; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+        }
+
+        #logo {
+            /* border: 1px solid; */
+            width: 100px;
+        }
+
+        #navbar>div:nth-child(1) {
+            /* border: 1px solid; */
+            width: 150px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* justify-content: flex-end; */
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #navbar>div:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-bottom: 20px; */
+        }
+
+        #navbar>div:nth-child(3) {
+            /* border: 1px solid; */
+            width: 200px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* justify-content: flex-end; */
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #menu {
+            width: 30px;
+        }
+
+        input {
+            height: 30px;
+            width: 500px;
+            border: 0.5px solid rgb(193, 190, 190);
+        }
+
+        input::placeholder {
+            color: solid rgb(193, 190, 190);
+        }
+
+        #search {
+            /* border: 0.5px solid rgb(193, 190, 190); */
+            width: 18px;
+            height: 18px;
+            /* margin-top: 5px; */
+            padding: 10px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+        }
+
+        #ser {
+            border: 0.5px solid rgb(193, 190, 190);
+            width: 50px;
+            height: 33px;
+            /* margin-top: 05px; */
+            background-color:
+                #f2f2f2;
+        }
+
+        #ser2 {
+            width: 50px;
+            height: 33px;
+            background-color:
+                #f2f2f2;
+        }
+
+        #create {
+            /* border: 1px solid; */
+            width: 25px;
+
+        }
+
+        #notification {
+            /* border: 1px solid; */
+            width: 40px;
+        }
+
+        #profile {
+            width: 30px;
+        }
+
+        #dot {
+            width: 50px;
+        }
+
+        /* belowsection */
+
+        #container {
+            width: 900px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #play_video {
+            width: 900px;
+            height: 500px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar">
+
+        <div>
+            <img src="https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" alt="" id="menu"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlcGaW6a5d1B36O2VOm0NUUFpFb_isTHUZs9ZozTJzKfh9ufhyERUpcP4KGcSK1eDjIg&usqp=CAU"
+                alt="" id="logo">
+        </div>
+        <div><input type="text" id="query" placeholder="Search">
+            <div id="ser">
+                <div id="ser2"><img src="https://www.pngall.com/wp-content/uploads/8/Vector-Search.png" alt=""
+                        id="search" onclick="search()"></div>
+            </div>
+        </div>
+        <div>
+            <div><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0X49u0_AttdAh1D-j2IPMNU9N3prpAwp4xw&usqp=CAU"
+                    alt="" id="create"></div>
+            <div><img
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cGF0aCBkPSJtMjQ3LjY2IDMxOC43aDcyLjQ1N3YtNzIuNDU3aC03Mi40NTd6bTkuNDcyNy02Mi45ODhoNTMuNTE2djUzLjUxNmgtNTMuNTE2eiIvPgogIDxwYXRoIGQ9Im0zMzkuNTQgMzE4LjdoNzIuNDU3di03Mi40NTdoLTcyLjQ1N3ptOS40NzI3LTYyLjk4OGg1My41MTZ2NTMuNTE2aC01My41MTZ6Ii8+CiAgPHBhdGggZD0ibTQzMS40MSAyNDYuMjR2NzIuNDU3aDcyLjQ1N3YtNzIuNDU3em02My40NjEgNjIuOTg4aC01My45ODh2LTUzLjUxNmg1My41MTZ2NTMuNTE2eiIvPgogIDxwYXRoIGQ9Im0yNDcuNjYgNDEyLjQ3aDcyLjQ1N3YtNzIuOTNoLTcyLjQ1N3ptOS40NzI3LTYzLjQ2MWg1My41MTZ2NTMuNTE2aC01My41MTZ6Ii8+CiAgPHBhdGggZD0ibTMzOS41NCA0MTIuNDdoNzIuNDU3di03Mi45M2gtNzIuNDU3em05LjQ3MjctNjMuNDYxaDUzLjUxNnY1My41MTZoLTUzLjUxNnoiLz4KICA8cGF0aCBkPSJtNDMxLjQxIDQxMi40N2g3Mi40NTd2LTcyLjkzaC03Mi40NTd6bTkuNDcyNy02My40NjFoNTMuNTE2djUzLjUxNmgtNTMuNTE2eiIvPgogIDxwYXRoIGQ9Im0yNDcuNjYgNTA1Ljc2aDcyLjQ1N3YtNzIuNDU3aC03Mi40NTd6bTkuNDcyNy02Mi45ODRoNTMuNTE2djUzLjUxNmgtNTMuNTE2eiIvPgogIDxwYXRoIGQ9Im0zMzkuNTQgNTA1Ljc2aDcyLjQ1N3YtNzIuNDU3aC03Mi40NTd6bTkuNDcyNy02Mi45ODRoNTMuNTE2djUzLjUxNmgtNTMuNTE2eiIvPgogIDxwYXRoIGQ9Im00MzEuNDEgNTA1Ljc2aDcyLjQ1N3YtNzIuNDU3aC03Mi40NTd6bTkuNDcyNy02Mi45ODRoNTMuNTE2djUzLjUxNmgtNTMuNTE2eiIvPgogPC9nPgo8L3N2Zz4K"
+                    alt="" id="dot"></div>
+            <div><img
+                    src="https://previews.123rf.com/images/illizium/illizium1903/illizium190300113/119765682-notification-icon-vector-bell-icons-in-line.jpg"
+                    alt="" id="notification"></div>
+            <div><img src="https://cquipsplus.ca/wp-content/themes/cera/assets/images/avatars/user-avatar.png" alt=""
+                    id="profile"></div>
+        </div>
+    </div>
+    <div id="container">
+        <iframe id="play_video" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    let playvideo = () => {
+        let video = JSON.parse(localStorage.getItem("video"))
+        console.log(video)
+        let id = video.id.videoId;
+        let play_video = document.getElementById("play_video");
+        play_video.src = `https://www.youtube.com/embed/${id}`
+    }
+
+    playvideo()
+</script>

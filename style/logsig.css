@@ -1,0 +1,39 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(253, 187, 187);
+}
+#container2 {
+    width: 300px;
+    height: 390px;
+    /* border: 1px solid; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(254, 241, 225);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(67, 15, 117);
+}
+
+input{
+    width: 250px;
+    height: 25px;
+    display: grid;
+    /* grid-template-columns: auto; */
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+label{
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+#signin{
+    width: 258px;
+    background-color: rgb(190, 228, 190);
+} 

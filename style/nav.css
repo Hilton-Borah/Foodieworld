@@ -1,0 +1,91 @@
+#body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(225, 245, 255);
+}
+
+#navbar{
+    width: 1450px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: #d98deb;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: sticky; 
+    top: 0; 
+    /* margin-left: 30px; */
+}
+/* #edf96a */
+
+#navbar:hover{
+    color: rgb(30, 69, 159);
+}
+
+#search{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #96b1f0;
+    background-color:antiquewhite;
+}
+
+#image{
+    width: 130px;
+    height: 45px;
+    border-radius: 100px;
+}
+
+#Foodieworld{
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    font-family:cursive;
+    color: #41c065;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#mainsearch{
+    display: flex;
+    /* gap: 100px; */
+}
+
+#button{
+    width: 60px;
+    border: 1px solid rgb(66, 65, 65);
+    background-color: rgb(251, 223, 187);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button:hover{
+    background-color: rgb(250, 200, 136);
+}
+
+.class{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#mainfoodie{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#getall{
+    cursor: pointer;
+}
