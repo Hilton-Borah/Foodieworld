@@ -1,6 +1,6 @@
 # Recipe-Clone
 
-FoodieWorld is a food recipe site where you can search for recipe of a dish, with proper instruction of which given in the application. Kindly click the link to see the website ---> https://hilton-borah.github.io/Recipe-App/
+FoodieWorld is a food recipe site where you can search for recipe of a dish, with proper instruction of which given in the application. Kindly click the link to see the website ---> https://hilton-borah.github.io/Foodieworld/
 
 Landing page
 
